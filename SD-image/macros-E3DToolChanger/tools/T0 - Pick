@@ -1,0 +1,28 @@
+;
+; T0 - Pick
+;
+
+;Unlock Coupler
+M98 P/macros/tools/Decouple
+
+;Move In
+G1 X-12.5 Y225 F50000
+G1 Y270
+
+;Tool change
+;T0
+
+;Wait for Warm Up
+M116 P0
+
+;Collect
+G1 Y281 F5000
+
+;Close Coupler
+M98 P/macros/tools/Couple
+
+;Move Out
+G1 Y200 F25000
+
+;Fan on
+M98 P/macros/fans/Fan 0 On

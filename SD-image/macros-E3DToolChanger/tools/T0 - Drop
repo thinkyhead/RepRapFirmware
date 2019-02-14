@@ -1,0 +1,17 @@
+;
+; T0 - Drop
+;
+
+;Fan off
+M98 P/macros/fans/Fan 0 Off
+
+;Move In
+G1 X-12.5 Y225 F50000
+G1 Y270
+G1 Y281 F5000
+
+;Open Coupler
+M98 P/macros/tools/Decouple
+
+;Move Out
+G1 Y225 F50000

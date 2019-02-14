@@ -1,0 +1,4 @@
+;
+; Home XY macro
+;
+G28 X Y
